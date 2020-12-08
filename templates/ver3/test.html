@@ -1,0 +1,88 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>test checkbox</title>
+    <style>
+      table,
+      th,
+      td {
+        border: 2px solid red;
+        border-collapse: collapse;
+      }
+      th,
+      td {
+        padding: 50px;
+      }
+      table {
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <form>
+        
+        
+       
+       
+        
+
+        <tr>
+          <th>#</th>
+          <th>#</th>
+          <th>#</th>
+
+        </tr>
+        <tr>
+          <td>
+            <input type="checkbox" id="1" name="vehicle1" value="Bike" /><label for="vehicle1"> I have a bike</label><br />
+          </td>
+          <td>S</td>
+          <td>D</td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" id="2" name="vehicle2" value="Car" /> <label for="vehicle2"> I have a car</label><br /></td>
+          <td>S</td>
+          <td>D</td>
+        </tr>
+        <tr>
+          <td> <input type="checkbox" id="3" name="vehicle3" value="Boat" /><label for="vehicle3"> I have a boat</label></td>
+          <td><span style="font-size:24px;">แก้ไข</span></td>
+          <td>D</td>
+        </tr>
+      </form>
+    </table>
+
+    <script>
+        let vehicle = [1,2,3]
+        for(i of vehicle){
+            let checked = document.getElementById(i)
+            checked.checked = true 
+        }
+        const a1 = "[5, 6, 7]"
+        const a2 = "[1, 2]"
+        const a3 = "[1]"
+        console.log(a2.length);
+
+        const split_1 = a2.split(", ");
+        const split_2 = split_1[0].split('[')
+        const split_3  = split_1[1].split(']')
+        
+        // console.log(split_1[1]);
+        console.log(split_2[1]);
+        console.log(split_3[0]);
+
+        const index_is_checked = [split_2[1],split_3[0]];
+        for(i of index_is_checked){
+                let checked = document.getElementById(i)
+                checked.checked = false 
+        }
+        
+        
+        
+
+    </script>
+
+  </body>
+</html>

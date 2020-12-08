@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    color:white;
+    text-decoration:none;
+}
+nav{
+    padding:20px;
+    color: white;
+    background:green;
+    
+}
+h3{
+    padding:1rem;
+}
+header{
+    text-align:center;
+}
+table,tr,th,td{
+    text-align:center;
+    padding:10px;
+    margin:auto;
+    border-collapse: collapse;
+    border: 3px solid black;
+    margin-top: 25px;
+ 
+    margin-bottom: 1rem;
+}
+footer{
+    margin-top: 100px;
+}
+
+.cbl{
+    font-size:24px;
+    margin: 20px;
+}
+.cb{
+    width: 24px;
+    height: 24px;
+}
+.btn{
+    padding:1rem 2rem 1rem;
+}
+.bword{
+    padding:1rem 0rem 2rem;
+}
